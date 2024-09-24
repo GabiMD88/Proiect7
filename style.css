@@ -1,0 +1,81 @@
+.titlu {
+    font-size: 50px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    font-style: italic;
+    display:flex;
+}
+@media screen and (max-width:1023px) 
+{
+.titlu {
+    font-size: 40px;
+    color: yellowgreen;
+}
+}
+@media screen and (max-width:699px) 
+{
+.titlu {
+    font-size: 30px;
+    color: red;
+}
+}
+@media screen and (max-width:399px) 
+{
+.titlu {
+    font-size: 20px;
+    color: blueviolet;
+}
+}
+
+.element {
+    height: 50vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU4alSB5os9Pkx2Pg-yzeeY3pjIGU5gKSNiw&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    font-style: bold;
+}
+
+.efect {
+    backdrop-filter: blur(5px);
+    background-image: linear-gradient(90deg, rgba(138, 38, 38, 0.4) rgba(25, 26, 35, 0.1));
+    height: 100px;
+    width: 500px;
+    border-radius: 20px;
+    color:  rgba(205, 218, 220, 0.87);
+    font-size: 45px;
+    display: grid;
+    place-items:center;
+    }
+
+    .multielement {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        margin: 20px;
+    }
+    .coloane {
+        border: 2px solid greenyellow;
+    }
+    
+    @media screen and (max-width:800px) 
+    {
+     .multielement {
+        grid-template-columns:repeat(3, 1fr);
+      }
+    }
+    @media screen and (max-width:500px) 
+    {
+     .multielement {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media screen and (max-width:250px) 
+    {
+     .multielement {
+      grid-template-columns: 1fr;
+      }
+    }
+    
